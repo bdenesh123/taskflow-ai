@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* Enable dark mode through the .dark class on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Shared design tokens for Tailwind utility classes */
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-sidebar: var(--sidebar);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+}
+
+/* Light theme */
+:root {
+  color-scheme: light;
+
+  --background: #ffffff;
+  --surface: #ffffff;
+  --sidebar: #f7f7f7;
+  --foreground: #171717;
+  --muted: #6b6b6b;
+  --border: #e5e5e5;
+  --primary: #171717;
+  --primary-foreground: #ffffff;
+}
+
+/* Dark theme */
+:root.dark {
+  color-scheme: dark;
+
+  --background: #212121;
+  --surface: #2a2a2a;
+  --sidebar: #171717;
+  --foreground: #f5f5f5;
+  --muted: #a3a3a3;
+  --border: #424242;
+  --primary: #f5f5f5;
+  --primary-foreground: #171717;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,12 @@
+$kind: http-request
+description: ""
+url: http://localhost:3000/auth/login
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "email": "taylor@example.com",
+      "password": "TaskFlowTest123!"
+    }
+order: 3000

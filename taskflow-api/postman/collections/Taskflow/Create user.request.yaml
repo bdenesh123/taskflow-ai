@@ -1,0 +1,13 @@
+$kind: http-request
+description: ''
+url: http://localhost:3000/users
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "name": "Taylor Wong",
+      "email": "taylor@example.com",
+      "password": "{{testPassword}}"
+    }
+order: 2000

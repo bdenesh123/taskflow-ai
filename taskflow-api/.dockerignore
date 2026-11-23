@@ -1,0 +1,35 @@
+
+# Dependencies
+node_modules
+
+# Compiled output and build cache
+dist
+build
+*.tsbuildinfo
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Git
+.git
+.gitignore
+
+# Tests and coverage
+coverage
+.nyc_output
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# IDE and OS files
+.vscode
+.idea
+.DS_Store
+
+# Temporary files
+.tmp
+.temp
